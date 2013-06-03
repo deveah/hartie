@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hârtie</title>
+	
+		<meta charset="UTF-8">
+
+		<link rel="stylesheet" type="text/css" href="hartie.css" />
+		<script type="text/javascript" src="hartie.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){ main() };
+			window.onclick = function(){ nextSlide() };
+			window.onkeydown = function(e){ handleKey(e) };
+		</script>
+	</head>
+
+	<body>
+		<div class="slide">
+			<h1>Hârtie</h1>
+			<h3><i>a minimal HTML presentation engine</i></h3>
+			<a href="http://github.com/deveah/hartie">http://github.com/deveah/hartie</a>
+			<div id="footer">For navigation, click for the next slide, or use
+			the arrow keys.</div>
+		</div>
+
+		<div class="slide">
+			<h2>About</h2>
+			<p><i>Hârtie</i> was developed because most of the HTML presentation
+			frameworks (at least at the time of creation), were quite bloated.
+			</p>
+			<p>In contrast, <i>Hârtie</i> is minimalistic; it does only the
+			strictest of functions, with no fancy transitions, or anything too
+			complicated for someone who's never fiddled with HTML.</p>
+			<p>Don't get me wrong, it still is powerful, but its power is
+			inherited from HTML.</p>
+		</div>
+
+		<div class="slide">
+			<h2>Functions overview</h2>
+			<ul>
+				<li>Slide navigation<sup>1</sup>: <ul>
+					<li>next slide = <i>click</i> or <i>right arrow key</i></li>
+					<li>previous slide = <i>left arrow key</i></li>
+					<li>home slide = <i>home key</i></li>
+					<li>end slide = <i>end key</i></li>
+					</ul><br>
+				</li>
+				<li>That's it.</li>
+				<div id="footer"><sup>1</sup> this is the default behaviour.</div>
+			</ul>
+		</div>
+
+		<div class="slide">
+			<h2>How to use Hârtie</h2>
+			<p>First, include <i>hartie.js</i> in your to-be-presentation. Then,
+			specify the behaviour of the page via the <i>onload</i>,
+			<i>onclick</i> and <i>onkeydown</i> events applied to the window.
+			You now have a presentation going!
+			</p>
+			<p>You can optionally specify a stylesheet to suit your needs.</p>
+			<p>Slides should be marked as belonging to the <i>slide</i> class,
+			like this:</p>
+			<center><table style="color:#8ac; background:#040810;"><tr><td>
+				&lt;div class=&quot;slide&quot;&gt;<br>
+				&nbsp;&nbsp;... your slide here ...<br>
+				&lt;/div&gt;
+			</td></tr></table></center>
+			<p>That's it. You should also see the source of this page for a
+			living, breathing example!</p>
+		</div>
+
+		<div class="slide">
+			<h2>Misc</h2>
+			<p>You can add a footer to the page like this:</p>
+			<center><table style="color:#8ac; background:#040810;"><tr><td>
+				&lt;div id=&quot;footer&quot;&gt;footer&lt;/div&gt;
+			</td></tr></table></center>
+			<div id="footer">And it'll show up like this!</div>
+		</div>
+
+		<div class="slide">
+			<h1>Cheers!</h1>
+			<p>Fork me at: <a href="http://github.com/deveah/hartie">http://github.com/deveah/hartie</a></p>
+			<p>Hârtie is <i>public domain</i>. It comes with no warranty, and
+			you can do anything you like with it!</p>
+		</div>
+	</body>
+</html>
+

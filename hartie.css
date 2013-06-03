@@ -1,0 +1,32 @@
+
+body {
+	font-family: "Consolas", monospace;
+	color: white;
+	background: black;
+	font-size: 1.5vw;
+}
+
+a {
+	color: #28c;
+}
+
+p {
+	text-indent: 3vw;
+}
+
+h2 {
+	background: #124;
+}
+
+#footer {
+	position: absolute;
+	top: 80vh;
+	color: #555;
+}
+
+.slide {
+	top: 10vh;
+	left: 10vw;
+	width: 80vw;
+}
+
